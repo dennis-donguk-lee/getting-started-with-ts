@@ -8,3 +8,14 @@ function sendEmail(contact: IEmailable) {
 }
 
 sendEmail({name: "Dennis Lee", email: "dennis.l@digipen.edu"});
+
+
+class Company implements IEmailable {
+  name: string;
+  email: string;
+
+  constructor(companyName: string, emailAddress: string) {
+    this.name = companyName;
+    this.email = emailAddress;
+  }
+}
