@@ -19,3 +19,7 @@ class Company implements IEmailable {
     this.email = emailAddress;
   }
 }
+
+var treehouse = new Company("Treehouse", "support@teamtreehouse.com");
+
+sendEmail(treehouse);
